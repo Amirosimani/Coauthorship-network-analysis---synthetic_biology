@@ -67,8 +67,38 @@ for (i in 1:nrow(edge_list)){
 write.csv(edge_list, file = "edge_list_synthbio.csv")
 
 ### Network Analysis ----
+library(igraph)
+el=as.matrix(edge_list)
+g=graph.edgelist(el,directed=TRUE)
 
-### to do
+#calculating different degrees
+degrees <- data.frame(degree = degree(g),
+in_degree = degree(g, mode = c("in"), loops = FALSE, normalized = FALSE),
+out_degree = degree(g, mode = c("out"), loops = FALSE, normalized = FALSE),
+btwn= betweenness(g, directed = T),
+close = closeness(g, mode = c("all")),
+eigen <- evcent(g),
+bon <- bonpow(g)
+)
+
+#cleaning up the table
+degrees = degrees[,c(1:6, 28)]
+
+# correlate the measures
+cor(degrees)
+
+# regress attributes on centrality measures
+summary(lm(in_degree ~ out_degree))
+
+### Graph ----
+## start the graph ##
+set.seed(12)
+l <- layout.kamada.kawai(g)
+
+plot(lazega_friends_graph, layout=l, edge.arrow.size=.3)
+
+
+### to do----
   # transform entity resolution to a function
   # scraping journal articles to extract authors
 
