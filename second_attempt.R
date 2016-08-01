@@ -67,7 +67,7 @@ for (i in 1:nrow(edge_list)){
 
 write.csv(edge_list, file = "edge_list_synthbio.csv")
 
-### B. Network Analysis ----
+### B.1. Network Analysis ----
 #use the created edge list csv file "edge_list_synthbio.csv"
 edge_list = read.csv(file.choose(), sep = ",", header = T)
 edge_list$X <- NULL
@@ -75,6 +75,9 @@ edge_list$X <- NULL
 library(igraph)
 el=as.matrix(edge_list)
 graph=graph.edgelist(el,directed=TRUE)
+
+#graph density
+graph.density(graph)
 
 #calculating different degrees
 degrees <- data.frame(degree = degree(graph),
@@ -85,38 +88,63 @@ close = closeness(graph, mode = c("all")),
 eigen <- evcent(graph),
 bon <- bonpow(graph)
 )
-
 #cleaning up the table
 degrees = degrees[,c(1:6, 28)]
+  #include this in markdown
 
 # correlate the measures
-#turn it to a table
+#incldue this in markdown
 cor(degrees)
-
+   
 # regress attributes on centrality measures
+  #, do more corelation (in-degree and betweeness)
 summary(lm(in_degree ~ out_degree))
 
-### Graph ----
+### B.2. Graph ----
 ## start the graph ##
 set.seed(12)
 l <- layout.kamada.kawai(graph)
 
-# Size node by in-degree.
-V(graph)$size <- 3*sqrt(degree(graph, mode="in"))
-V(graph)$size2 <- V(graph)$size * .2
-
-# Size node by in-betweenes
-V(graph)$size <- ((((betweenness(graph, directed = T)-23.832627)/4.566372)/5.2191602)+1)*2
+# Size of node by in-degree.
+V(graph)$size <- 15*(degree(graph, mode="in")/ max(degree(graph, mode="in")))
 
 # Size of node label by in-degree.
-V(graph)$label.cex <- 2.5 * degree(graph, mode="in") / max(degree(graph, mode="in"))
-V(graph)$label.cex <- 0.001
-   # to do: make graph lables conditoined on in-betweeness
-
+V(graph)$label.cex <- ((betweenness(graph, directed = T)+1)/(max(betweenness(graph, directed = T))+1))*1.5
 
 # plot the graph
-plot(graph, layout=l, edge.arrow.size=.2, edge.curved=T, edge.color="grey")
+A<- plot(graph, layout=l, edge.arrow.size=.2, edge.curved=T, edge.color="grey")
 #title("Co-Authorship Graph",cex.main=0.8,col.main="black")
+
+### B.3. Community detection ----
+fgn = edge.betweenness.community (graph, directed = TRUE, edge.betweenness = TRUE, merges = TRUE,
+                                  bridges = TRUE, modularity = TRUE, membership = TRUE)  ## run Girvan-Newman partitioning
+
+plot(fgn, graph, layout=l, edge.arrow.size=.2, edge.curved=T, edge.color="grey")  ## plot G-N partitioning
+
+fwt <- walktrap.community(graph, steps=200,modularity=TRUE) # , labels=TRUE)  ## run random walk partitioning
+
+plot(fwt, graph, layout=l, edge.arrow.size=.2, edge.curved=T, edge.color="grey")  ## plot R-W partitioning
+
+flp = label.propagation.community(graph)  ## run label propogation partitioning
+
+plot(flp, graph, layout=l, edge.arrow.size=.2, edge.curved=T, edge.color="grey")  ## plot L-P partitioning
+
+#comparing different community dittection algorithms
+compare(fgn, fwt, method= c("nmi"))
+compare(fgn, fwt, method= c("rand"))
+compare(fgn, fwt, method= c("adjusted.rand"))
+
+compare(fgn, flp, method= c("nmi"))
+compare(fgn, fwt, method= c("rand"))
+compare(fgn, flp, method= c("adjusted.rand"))
+
+## get the results in a dataframe
+
+girvan = data.frame(fgn$membership)
+rw = data.frame(fwt$membership)
+flpm = data.frame(flp$membership)
+
+degrees <- cbind(degrees, girvan, rw, flpm)
 
 
 ### to do----
