@@ -112,7 +112,7 @@ V(graph)$size <- 15*(degree(graph, mode="in")/ max(degree(graph, mode="in")))
 V(graph)$label.cex <- ((betweenness(graph, directed = T)+1)/(max(betweenness(graph, directed = T))+1))*1.5
 
 # plot the graph
-A<- plot(graph, layout=l, edge.arrow.size=.2, edge.curved=T, edge.color="grey")
+plot(graph, layout=l, edge.arrow.size=.2, edge.curved=T, edge.color="grey")
 #title("Co-Authorship Graph",cex.main=0.8,col.main="black")
 
 ### B.3. Community detection ----
@@ -150,7 +150,6 @@ degrees <- cbind(degrees, girvan, rw, flpm)
 ### to do----
   # transform entity resolution to a function
   # scraping journal articles to extract authors
-  # community detection
 
 
 
