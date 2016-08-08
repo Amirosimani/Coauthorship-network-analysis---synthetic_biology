@@ -1,51 +1,33 @@
 ---
-title: "Co-Authorship Network Analysis - sample"
-author: "Amir Imani"
-date: "1 August 2016"
-output: pdf_document
+output: word_document
 ---
 
-Having +6000 articles sitting on my hard drive, I thought to play around with them. 
-The idea is that to see how tightly knitted the network of scholars who write about **Syntethic Biology** and **Ethics**. 
 
-To do so, I picked up a random sample of 85 articles with more than one author to creat my network. Each node in the network is an author, and directed edges go from all the authors of one articles to each others. 
+Having +6000 articles sitting on my hard drive, and a few days off from work, I thought it could be interseting to see how the scholars are related to each other in the field of **Syntethic Biology**. 
 
-relying on R, I have extracted author names from articles, created a matrix of co-authorship, transformed the matrix to an edge list, and conducted network analysis.
+I have done an analysis on **co-authorship** to find the dynamic among scholars, to assess collaboration trends and to identify leading scientists and organizations. The analysis reveals the social structure of the networks by identifying actors and their connections. 
+
+To do so, I picked up a random sample of 85 articles with more than one author to creat my network, scraped the authors, assign each as a node in the network, and directed edges go from all the authors of one articles to each others. 
 
 
-```{r, echo=FALSE}
-library(reshape)
-library(dplyr)
-library(stringr)
-library(stringdist)
+```{r, echo=FALSE, eval=FALSE}
+#load the files
+edge_list = read.csv("edge_list_synthbio.csv", sep = ",", header = T)
+edge_list$X <- NULL
 
-Matrix2Edge <- function(x){  
-  data <- x
-  final <- data.frame("a"=character(),"b"=character()) 
-  #the idea is to iterate over the columns of  the dataframe, melt it, and each time drop the melted column
-  for (i in 1:(ncol(source_file)-1)){
-    id = paste("V", i, sep="")
-    edge_list <- melt(data, id = (id))
-    data[id] <- NULL
-    keeps <- c(id, "value")
-    edge_list <- edge_list[keeps]
-    colnames(edge_list) <- colnames(final)
-    final <- rbind(final,edge_list)
-  }
-  final <- final[!(final$b=="" | final$b==" "),]
-  return(final)
-}
+#creating the graph
+library(igraph)
+el=as.matrix(edge_list)
+graph=graph.edgelist(el,directed=TRUE)
+density = graph.density(graph)
 
-simmilarity_index <- function(x, y){ 
-  sim_index <- 1- stringdist(x, y, method = "lv")/max(nchar(as.character(x)), nchar(as.character(y)))
-  return(sim_index)  
-}
 ```
 
-You can also embed plots, for example:
 
-```{r, echo=FALSE}
-plot(cars)
+The basic steps for conducting co-authorship studies in health research are described and common network metrics are presented. 
+
+As seen from the grapg density, it is a sparse graph.
+
+```{r, echo=FALSE, eval=TRUE}
+print(density)
 ```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

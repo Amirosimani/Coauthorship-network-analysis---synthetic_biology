@@ -91,14 +91,25 @@ bon <- bonpow(graph)
 #cleaning up the table
 degrees = degrees[,c(1:6, 28)]
   #include this in markdown
+degrees_sorted <- degrees[order(-degrees$in_degree),] 
+
+library(gridExtra)
+pdf("data_output.pdf", height=15, width=15)
+grid.table(degrees)
+dev.off()
+
 
 # correlate the measures
 #incldue this in markdown
-cor(degrees)
+cor(degrees_sorted)
    
 # regress attributes on centrality measures
   #, do more corelation (in-degree and betweeness)
-summary(lm(in_degree ~ out_degree))
+in_degree = degree(graph, mode = c("in"), loops = FALSE, normalized = FALSE)
+out_degree = degree(graph, mode = c("out"), loops = FALSE, normalized = FALSE)
+total_degree = degree(graph)
+btwn= betweenness(graph, directed = T)
+summary(lm(total_degree ~ btwn))
 
 ### B.2. Graph ----
 ## start the graph ##
@@ -109,7 +120,7 @@ l <- layout.kamada.kawai(graph)
 V(graph)$size <- 15*(degree(graph, mode="in")/ max(degree(graph, mode="in")))
 
 # Size of node label by in-degree.
-V(graph)$label.cex <- ((betweenness(graph, directed = T)+1)/(max(betweenness(graph, directed = T))+1))*1.5
+V(graph)$label.cex <- ((betweenness(graph, directed = T)+1)/(max(betweenness(graph, directed = T))+1))*2
 
 # plot the graph
 plot(graph, layout=l, edge.arrow.size=.2, edge.curved=T, edge.color="grey")
