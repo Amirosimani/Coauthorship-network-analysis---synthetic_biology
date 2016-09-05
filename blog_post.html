@@ -292,6 +292,137 @@ for (i in 1:nrow(edge_list)){
 <pre class="r"><code>library(igraph)
 
 graph=graph.edgelist(as.matrix(edge_list),directed=FALSE)</code></pre>
+<p>some basic network analysis measures like density and ????? of graph can be calcuatled right away.</p>
+<pre class="r"><code>graph.density(graph)</code></pre>
+<p>Now a few different centrality measures are calcualted and put next to each other in a table. I have summarised some of the most frequently used centrality measures in the table below with how they are calculated, and their potentials and limits.</p>
+<table style="width:65%;">
+<colgroup>
+<col width="12%"></col>
+<col width="23%"></col>
+<col width="29%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Measure</th>
+<th align="left">Definition</th>
+<th align="left">Calculation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">total degree centrality</td>
+<td align="left">Is the number of ties (edges) a node has without considering their directions. It shows the extend a node holds all of the ties in a network.</td>
+<td align="left">The degree centrality of a vertex v, for a given graph G := (V,E) with V vertices and E edges, is calculated as <span class="math inline">\(Cd(v) = deg(v)\)</span> It is measured by number of edges of a node. It can be also normalized by dividing by total number of edges.</td>
+</tr>
+<tr class="even">
+<td align="left">closeness centrality</td>
+<td align="left">It is based on the length of the average shortest path between a vertex and all vertices in the graph.Is a measure of the degree to which an individual is near all other individuals in a network.</td>
+<td align="left"><span class="math inline">\([∑^N〖d(i,j)〗]^-1\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">betweenness centrality</td>
+<td align="left">Betweenness centrality of node v is equal to the number of shortest paths from all vertices to all other that pass v. It is a measure of the extent to which a node is connected to other nodes that are not connected to each other. In the other words the total amount of flow it carries if flow between all other nodes passes it.</td>
+<td align="left">The betweenness centrality of a vertex v for a given connected graph G is: <span class="math inline">\(g(v)= ∑_(s≠v≠t)▒(σst(v))/σst\)</span> Where σst is the total number of shortest paths from node s to node t and σst(v) is the number of those paths that pass through v. It is between 0 and 1 with 1 being the highest centrality.</td>
+</tr>
+</tbody>
+</table>
+<p>They all measure the consequences of having (or not having) a certain node in a graph which shows the importance/power/influence of the node in the network structure.</p>
+<div id="high-degree-centrality" class="section level3">
+<h3>High Degree Centrality:</h3>
+<p>A node with high degree centrality, has more autonomy from its alters (comparing to a node with lower degree), therefore, it has more flexibility/power/opportunities/choices to pick any of those nodes in for example a trade context.</p>
+</div>
+<div id="high-betweenness-centrality" class="section level3">
+<h3>High Betweenness Centrality:</h3>
+<p>A node with high betweenness centrality has a large influence on the transfer of items through the network, under the assumption that item transfer follows the shortest paths. Betweenness Centrality is related to connectivity in the graph, in so much as high betweenness vertices have the potential to disconnect graphs if removed. Therefore, a node with high betweenness centrality has the capacity to broker contacts among other nodes, and isolate other nodes or prevent contact.</p>
+</div>
+<div id="high-closeness-centrality" class="section level3">
+<h3>High Closeness Centrality:</h3>
+<p>A node with high acts as a reference point by which can reach a larger number of other nodes at shorter path lengths. It emphasizes the distance of an actor to all others in the network (as oppose to direct ties in degree centrality).</p>
+</div>
+<div id="potential-limitation" class="section level3">
+<h3>Potential Limitation:</h3>
+<p><strong>Degree centrality</strong> is particularly useful when we want to compare networks cohesiveness as in how the ties have been distributed. It addresses the problem that can rise when graph density is not adequate measure (for example if in a network certain node has disproportionately high degree).</p>
+<p>However, It’s main limitation is that it only takes into account the immediate ties that a node has to its egos, rather than indirect ties to all other nodes. A node with a high total degree centrality might be connected to some whole other nodes, but those nodes might be rather disconnected from the network as a whole, thus the ego node is only central locally and therefore doesn’t have the ability to broker between groups (or information/flow originated in other parts of the network is likely not to reach it).</p>
+<p><strong>Betweennesss centrality</strong> is a good measure to find nodes which bridge subgroups in a network, and consequently indicate structural holes in a network. It can also identify levels of hierarchy in a network. If one eliminates all the actors with no betweenness (that is, the “subordinates”), some of the remaining actors will then have 0 betweenness—they are at the second level of the hierarchy.</p>
+<p>While it is useful for analyses of spread of disease and pandemics, it can be misleading for simpler analysis.</p>
+<p>As <strong>closeness Centrality</strong> relies on the sum of the geodesic distances form each actor to all the others, it can be misleading in complicated graphs. A node that is very close to a relatively small subset of a network, can have the same score as a moderately close node to every actor in a large subset of the network.</p>
+<p>I rather pick my favorite measure based on the analysis that I am doing instead of having a universal one. As mentioned above, for picking the most popular node, I will use degree centrality. To see which node is passing the most flow I will use betweenness centrality. For analysis similar to market/resource access, I will use closeness centrality.</p>
+<p>It is always informative to sort the table. I picked the in-degree to sort the table.</p>
+<pre class="r"><code>#calculating different degrees
+degrees &lt;- data.frame(degree = degree(graph),
+in_degree = degree(graph, mode = c(&quot;in&quot;), loops = FALSE, normalized = FALSE),
+out_degree = degree(graph, mode = c(&quot;out&quot;), loops = FALSE, normalized = FALSE),
+btwn= betweenness(graph, directed = T), #Betweenness Centrality
+close = closeness(graph, mode = c(&quot;all&quot;)), #Closeness Centrality
+eigen &lt;- evcent(graph), #Eigenvector Centrality 
+bon &lt;- bonpow(graph) #Bonacich Power
+)
+
+#cleaning up the table
+degrees = degrees[,c(1:6, 28)]
+degrees_sorted &lt;- degrees[order(-degrees$in_degree),] </code></pre>
+<p>If you want to export the dataframe to a nice pdf file, you can use the <strong>“gridExtra”</strong> library.</p>
+<pre class="r"><code>library(gridExtra)
+pdf(&quot;data_output.pdf&quot;, height=15, width=15)
+grid.table(degrees)
+dev.off()</code></pre>
+<pre class="r"><code>cor(degrees_sorted)
+   
+# regress attributes on centrality measures
+in_degree = degree(graph, mode = c(&quot;in&quot;), loops = FALSE, normalized = FALSE)
+out_degree = degree(graph, mode = c(&quot;out&quot;), loops = FALSE, normalized = FALSE)
+total_degree = degree(graph)
+btwn= betweenness(graph, directed = T)
+summary(lm(total_degree ~ btwn))</code></pre>
+</div>
+</div>
+<div id="social-network-graphs" class="section level2">
+<h2>Social Network Graphs</h2>
+<pre class="r"><code>## start the graph ##
+set.seed(12)
+l &lt;- layout.kamada.kawai(graph)
+
+# Size of node by in-degree.
+V(graph)$size &lt;- 15*(degree(graph, mode=&quot;in&quot;)/ max(degree(graph, mode=&quot;in&quot;)))
+
+# Size of node label by in-degree.
+V(graph)$label.cex &lt;- ((betweenness(graph, directed = T)+1)/(max(betweenness(graph, directed = T))+1))*2
+
+# plot the graph
+plot(graph, layout=l, edge.arrow.size=.2, edge.curved=T, edge.color=&quot;grey&quot;)
+title(&quot;Co-Authorship Graph&quot;,cex.main=0.8,col.main=&quot;black&quot;)</code></pre>
+<div id="community-extraction-clustering" class="section level3">
+<h3>Community extraction &amp; Clustering</h3>
+<pre class="r"><code>fgn = edge.betweenness.community (graph, directed = TRUE, edge.betweenness = TRUE, merges = TRUE,
+                                  bridges = TRUE, modularity = TRUE, membership = TRUE)  ## run Girvan-Newman partitioning
+
+plot(fgn, graph, layout=l, edge.arrow.size=.2, edge.curved=T, edge.color=&quot;grey&quot;)  ## plot G-N partitioning
+
+fwt &lt;- walktrap.community(graph, steps=200,modularity=TRUE) # , labels=TRUE)  ## run random walk partitioning
+
+plot(fwt, graph, layout=l, edge.arrow.size=.2, edge.curved=T, edge.color=&quot;grey&quot;)  ## plot R-W partitioning
+
+flp = label.propagation.community(graph)  ## run label propogation partitioning
+
+plot(flp, graph, layout=l, edge.arrow.size=.2, edge.curved=T, edge.color=&quot;grey&quot;)  ## plot L-P partitioning
+
+#comparing different community dittection algorithms
+compare(fgn, fwt, method= c(&quot;nmi&quot;))
+compare(fgn, fwt, method= c(&quot;rand&quot;))
+compare(fgn, fwt, method= c(&quot;adjusted.rand&quot;))
+
+compare(fgn, flp, method= c(&quot;nmi&quot;))
+compare(fgn, fwt, method= c(&quot;rand&quot;))
+compare(fgn, flp, method= c(&quot;adjusted.rand&quot;))
+
+## get the results in a dataframe
+
+girvan = data.frame(fgn$membership)
+rw = data.frame(fwt$membership)
+flpm = data.frame(flp$membership)
+
+degrees &lt;- cbind(degrees, girvan, rw, flpm)</code></pre>
+</div>
 </div>
 
 
