@@ -1,20 +1,16 @@
 ### 0. Libraries ----
 library(reshape)
 library(dplyr)
-library(stringr)
 library(stringdist)
 
 ### 1. Functions ----
 Matrix2Edge <- function(x){
+  final <- data.frame("a"=character(),"b"=character()) #an empty dataframe to add the edge list to
   
-  data <- x
-  final <- data.frame("a"=character(),"b"=character())
-  
-  #the idea is to iterate over the columns of  the dataframe, melt it, and each time drop the melted column
-  for (i in 1:(ncol(source_file)-1)){
+  for (i in 1:(ncol(x)-1)){
     id = paste("V", i, sep="")
-    edge_list <- melt(data, id = (id))
-    data[id] <- NULL
+    edge_list <- melt(x, id = (id))
+    x[id] <- NULL
     keeps <- c(id, "value")
     edge_list <- edge_list[keeps]
     colnames(edge_list) <- colnames(final)
@@ -37,15 +33,10 @@ source_file = read.csv(file.choose(), sep = ";", header = F)
 edge_list <- Matrix2Edge(source_file)
 
 # triming and cleaning up cells
-edge_list$a <- str_replace_all(edge_list$a, "[^[:alnum:]]", " ")
-edge_list$b <- str_replace_all(edge_list$b, "[^[:alnum:]]", " ")
+library(dplyr)
 
-edge_list$a <- trimws(edge_list$a)
-edge_list$b <- trimws(edge_list$b)
-
-edge_list$a <- str_replace_all(edge_list$a, "  ", " ")
-edge_list$b <- str_replace_all(edge_list$b, "  ", " ")
-
+edge_list <- as.data.frame(sapply(edge_list, function(x) gsub("[^[:alnum:]]"," ", x))) #removes all non-alphanumerical characters (like punctuations, special characters, etc)
+edge_list <- as.data.frame(sapply(edge_list, function(x) trimws(x))) #removes leading and trainling whitespaces
 edge_list <- mutate_each(edge_list, funs(tolower))
 
 #entity resolution
@@ -73,8 +64,7 @@ edge_list = read.csv(file.choose(), sep = ",", header = T)
 edge_list$X <- NULL
 
 library(igraph)
-el=as.matrix(edge_list)
-graph=graph.edgelist(el,directed=TRUE)
+graph=graph.edgelist(as.matrix(edge_list),directed=FALSE)
 
 #graph density
 graph.density(graph)
