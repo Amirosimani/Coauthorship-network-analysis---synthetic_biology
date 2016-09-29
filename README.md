@@ -11,7 +11,7 @@ Regardless of what kind of collaboration network you want to analysis, you’ll 
 ##ANALYSIS
 It is useful to review a few major centrality measures in social networks before starting the analysis.
 
-Degree Centrality : Is the number of ties (edges) a node has without considering their directions. It shows the extend a node holds all of the ties in a network.
+**Degree Centrality** : Is the number of ties (edges) a node has without considering their directions. It shows the extend a node holds all of the ties in a network.
 
 The degree centrality of a vertex v, for a given graph G := (V,E) with |V| vertices and |E| edges, is calculated as
 
@@ -29,25 +29,25 @@ g(v)= ∑_(s≠v≠t)▒(σst(v))/σst
 
 Where σst is the total number of shortest paths from node s to node t and σst(v) is the number of those paths that pass through v. It is between 0 and 1 with 1 being the highest centrality.
 
-Closeness Centrality : It is based on the length of the average shortest path between a vertex and all vertices in the graph.
+**Closeness Centrality** : It is based on the length of the average shortest path between a vertex and all vertices in the graph.
 
 Is a measure of the degree to which an individual is near all other individuals in a network.
 
 They all measure the consequences of having (or not having) a certain node in a graph which shows the importance/power/influence of the node in the network structure.
 
-High Degree Centrality:
+**High Degree Centrality**:
 
 A node with high degree centrality, has more autonomy from its alters (comparing to a node with lower degree), therefore, it has more flexibility/power/opportunities/choices to pick any of those nodes in for example a trade context.
 
-High Betweenness Centrality:
+***High Betweenness Centrality***:
 
 A node with high betweenness centrality has a large influence on the transfer of items through the network, under the assumption that item transfer follows the shortest paths. Betweenness Centrality is related to connectivity in the graph, in so much as high betweenness vertices have the potential to disconnect graphs if removed. Therefore, a node with high betweenness centrality has the capacity to broker contacts among other nodes, and isolate other nodes or prevent contact.
 
-High Closeness Centrality:
+**High Closeness Centrality**:
 
 A node with high acts as a reference point by which can reach a larger number of other nodes at shorter path lengths. It emphasizes the distance of an actor to all others in the network (as oppose to direct ties in degree centrality).
 
-Potential Limitation:
+**Potential Limitation**:
 
 Degree centrality is particularly useful when we want to compare networks cohesiveness as in how the ties have been distributed. It addresses the problem that can rise when graph density is not adequate measure (for example if in a network certain node has disproportionately high degree).
 
