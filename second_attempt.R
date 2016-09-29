@@ -75,9 +75,9 @@ in_degree = degree(graph, mode = c("in"), loops = FALSE, normalized = FALSE),
 out_degree = degree(graph, mode = c("out"), loops = FALSE, normalized = FALSE),
 btwn= betweenness(graph, directed = T),
 close = closeness(graph, mode = c("all")),
-eigen <- evcent(graph),
-bon <- bonpow(graph)
+eigen <- evcent(graph)
 )
+degrees <- data.frame(degree,in_degree,out_degree,btwn,close,eigen)
 #cleaning up the table
 degrees = degrees[,c(1:6, 28)]
   #include this in markdown
