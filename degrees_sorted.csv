@@ -1,552 +1,244 @@
-"","a","b"
-"1","adam arkin","pamela a silver"
-"2","ahmad s khalil","agomoni ganguli mitra"
-"3","ali nouri","alan irwin"
-"4","amelie cserer","alexander van oudenaarden"
-"5","anna deplazes","alexandra seiringer"
-"6","baker david","anna labno"
-"7","barry canton","antoine danchin"
-"8","brian j yeh","arthur caplan"
-"9","brianna pearson","barbara a fechta"
-"10","c verharen","c prowse"
-"11","christian l barrett","chris j paddonb"
-"12","christina d smolke","christopher f chyba"
-"13","dae kyun robb","collin h martin"
-"14","daniel g gibson","daniel j dwyer"
-"15","dominique aubel","david berry"
-"16","douglas j piteraa","david magnus"
-"17","e ferguson","david nielsen"
-"18","effendi leonard","diana m bowman"
-"19","eric g gladstone","drew endy"
-"20","farren j isaacs","emily c parke"
-"21","gabrielle n samuel","eric m paradisea"
-"22","gaymon bennett","eric m paradisea"
-"23","graeme a hodge","erin d williams"
-"24","heinz neumann","gautam mukunda"
-"25","james m carothers","gaymon bennett"
-"26","jane calvert","howard chou"
-"27","jay d keasling","ian j molineux"
-"28","jeff gore","james j collins"
-"29","jennifer r anthony","jay d keasling"
-"30","jesse stricker","jennifer byers corbin"
-"31","joachim henkel","john i glass"
-"32","jonathan b tucker","jonathan a goler"
-"33","joy sinha","larry c anthony"
-"34","kristala jones prather","lorna weir"
-"35","leon y chan","markus huppenbauer"
-"36","linda j kahl","martin fussenegger"
-"37","lisa klasson","martin fussenegger"
-"38","lorna weir","michael j selgelid"
-"39","luis moroder","morgan meyer"
-"40","m bujara","nediljko budisa"
-"41","maja horst","nikolas rose"
-"42","marcel tigges","nils gilman"
-"43","mark a bedau","paul martin"
-"44","markus schmidt","peter holtz"
-"45","marnix h medema","petra neumann staubitz"
-"46","michael j selgelid","pier luigi luisi"
-"47","michelle c y chang","rachel a eachus"
-"48","michelle c y chang","rainer breitling"
-"49","mildred k cho","raymond a zilinskas"
-"50","nicole kronberger","ron weiss"
-"51","nigel m de s cameron","ron weiss"
-"52","pablo ravasi","ron weiss"
-"53","pasquale stano","s billerbeck"
-"54","paul oldham","salvador peiru"
-"55","paul rabinow","sam snell"
-"56","paul rabinow","samuel j reyes"
-"57","petra schwille","scott cookson"
-"58","priscilla e m purnick","siv g e andersson"
-"59","rachel wellhausen","sriram kosuri"
-"60","ruth mampuys","stefan diez"
-"61","ryan mcdaniel","stephen hall"
-"62","ryan mcdaniel","stephen m maurer"
-"63","seumas miller","tae yong kim"
-"64","shlomiya bar yam","taizo hanai"
-"65","shota atsumi","wendell a lim"
-"66","stephen d unwina","church george"
-"67","susan molyneux hodgson","frans w a brom"
-"68","svitlana v pustovit","ian kerridge"
-"69","vi ctor de lorenzo","j tharakan"
-"70","yoichiro shiba","michael j selgelid"
-"71","maureen a o malley","alexander powell"
-"72","gabrielle n samuel","michael j selgelid"
-"73","lalit kant","d t mourya"
-"74","gabrielle n samuel","michael j selgelid"
-"75","sibylle gaisser","thomas reiss"
-"76","thomas douglas","julian savulescu"
-"77","frida kuhlau","stefan eriksson"
-"78","filippa lentzos","gaymon bennett"
-"79","mildred k cho","david a relman"
-"80","robin fears","volker ter meulen"
-"81","arti rai","james boyle"
-"82","ponnusamy kumar","rajendiran sutha"
-"83","meinhard schiller","dieter metze"
-"84","m korenova","j stano"
-"85","zheng jun guan","markus schmidt"
-"86","adam arkin","george chruch"
-"87","baker david","collins jim"
-"88","barry canton","drew endy"
-"89","brianna pearson","kyri bye nagel"
-"90","c verharen","g middendorf"
-"91","christian l barrett","hyun uk kim"
-"92","dae kyun robb","mario ouellet"
-"93","daniel g gibson","carole lartigue"
-"94","douglas j piteraa","jack d newman"
-"95","e ferguson","e townsend"
-"96","effendi leonard","kevin solomon"
-"97","eric g gladstone","james j bull"
-"98","farren j isaacs","james j collins"
-"99","gabrielle n samuel","michael j selgelid"
-"100","gaymon bennett","anthony stavrianakis"
-"101","graeme a hodge","andrew d maynard"
-"102","james m carothers","jay d keasling"
-"103","jennifer r anthony","farnaz nowroozi"
-"104","jesse stricker","matthew r bennett"
-"105","joy sinha","justin p gallivan"
-"106","leon y chan","drew endy"
-"107","m bujara","f greve"
-"108","mark a bedau","uwe tangen"
-"109","markus schmidt","helge torgersen"
-"110","marnix h medema","roel bovenberg"
-"111","michelle c y chang","william trieu"
-"112","mildred k cho","arthur caplan"
-"113","nicole kronberger","wolfgang kerbe"
-"114","pablo ravasi","hugo gramajo"
-"115","paul oldham","geoff burton"
-"116","shlomiya bar yam","rocco casagrande"
-"117","shota atsumi","james c liao"
-"118","yoichiro shiba","james kirbya"
-"119","maureen a o malley","jonathan f davies"
-"120","gabrielle n samuel","ian kerridge"
-"121","gabrielle n samuel","ian kerridge"
-"122","frida kuhlau","kathinka evers"
-"123","filippa lentzos","jef boeke"
-"124","ponnusamy kumar","annamalai murugesan"
-"125","meinhard schiller","thomas a luger"
-"126","m korenova","k micieta"
-"127","zheng jun guan","lei pei"
-"128","baker david","endy drew"
-"129","brianna pearson","scott tonid"
-"130","c verharen","m castro sitiriche"
-"131","christian l barrett","bernhard  palsson"
-"132","dae kyun robb","karl j fisher"
-"133","daniel g gibson","vladimir n noskov"
-"134","douglas j piteraa","jay d keasling"
-"135","e ferguson","a spence"
-"136","effendi leonard","kristala jones prather"
-"137","gaymon bennett","paul rabinow"
-"138","jennifer r anthony","gina kwon a"
-"139","jesse stricker","william h mather"
-"140","m bujara","s panke"
-"141","mark a bedau","brigitte hantsche tangen"
-"142","markus schmidt","alexander kelle"
-"143","marnix h medema","eriko takano"
-"144","michelle c y chang","dae kyun robb"
-"145","mildred k cho","daniel mcgee"
-"146","nicole kronberger","ewald strasser"
-"147","pablo ravasi","hugo g menzella"
-"148","shlomiya bar yam","florentine eichler"
-"149","yoichiro shiba","dae kyun robb"
-"150","maureen a o malley","jane calvert"
-"151","frida kuhlau","anna t ho glund"
-"152","filippa lentzos","drew endy"
-"153","ponnusamy kumar","anandan dayanandan"
-"154","meinhard schiller","stephan grabbe"
-"155","m korenova","and v blanarikova"
-"156","zheng jun guan","wei wei"
-"157","baker david","jacobson joseph"
-"158","brianna pearson","laurie j heyer"
-"159","c verharen","g kadoda"
-"160","christian l barrett","sang yup lee"
-"161","dae kyun robb","karyn l newman"
-"162","daniel g gibson","ray yuan chuang"
-"163","e ferguson","j a van hilten"
-"164","jesse stricker","lev s tsimring"
-"165","markus schmidt","anna deplazes"
-"166","michelle c y chang","jay d keasling"
-"167","mildred k cho","ethics of genomics group"
-"168","nicole kronberger","wolfgang wagner"
-"169","shlomiya bar yam","allen lin"
-"170","yoichiro shiba","jay d keasling"
-"171","filippa lentzos","paul rabinow"
-"172","meinhard schiller","matthias gunzer"
-"173","zheng jun guan","and ke ping ma"
-"174","baker david","keasling jay"
-"175","brianna pearson","malcolm campbell"
-"176","dae kyun robb","john m ndungu"
-"177","daniel g gibson","mikkel a algire"
-"178","e ferguson","k lowe"
-"179","jesse stricker","jeff hasty"
-"180","markus schmidt","nikola biller andorno"
-"181","shlomiya bar yam","martin oesterreicher"
-"182","baker david","modrich paul"
-"183","dae kyun robb","kimberly a ho"
-"184","daniel g gibson","gwynedd a benders"
-"185","baker david","smolke christina"
-"186","dae kyun robb","rachel a eachus"
-"187","daniel g gibson","michael g montague"
-"188","baker david","weiss ron"
-"189","dae kyun robb","timothy s ham"
-"190","daniel g gibson","li ma"
-"191","dae kyun robb","james kirbya"
-"192","daniel g gibson","monzia m moodie"
-"193","dae kyun robb","michelle c y chang"
-"194","daniel g gibson","chuck merryman"
-"195","dae kyun robb","sydnor t withers"
-"196","daniel g gibson","sanjay vashee"
-"197","dae kyun robb","yoichiro shiba"
-"198","daniel g gibson","radha krishnakumar"
-"199","dae kyun robb","richmond sarpong"
-"200","daniel g gibson","nacyra assad garcia"
-"201","dae kyun robb","jay d keasling"
-"202","pamela a silver","george chruch"
-"203","anna labno","collins jim"
-"204","antoine danchin","drew endy"
-"205","barbara a fechta","kyri bye nagel"
-"206","c prowse","g middendorf"
-"207","chris j paddonb","hyun uk kim"
-"208","collin h martin","mario ouellet"
-"209","daniel j dwyer","carole lartigue"
-"210","david magnus","jack d newman"
-"211","david nielsen","e townsend"
-"212","diana m bowman","kevin solomon"
-"213","drew endy","james j bull"
-"214","emily c parke","james j collins"
-"215","eric m paradisea","michael j selgelid"
-"216","eric m paradisea","anthony stavrianakis"
-"217","erin d williams","andrew d maynard"
-"218","gaymon bennett","jay d keasling"
-"219","jay d keasling","farnaz nowroozi"
-"220","jennifer byers corbin","matthew r bennett"
-"221","larry c anthony","justin p gallivan"
-"222","markus huppenbauer","drew endy"
-"223","nediljko budisa","f greve"
-"224","paul martin","uwe tangen"
-"225","peter holtz","helge torgersen"
-"226","petra neumann staubitz","roel bovenberg"
-"227","rachel a eachus","william trieu"
-"228","raymond a zilinskas","arthur caplan"
-"229","ron weiss","wolfgang kerbe"
-"230","ron weiss","hugo gramajo"
-"231","salvador peiru","geoff burton"
-"232","taizo hanai","rocco casagrande"
-"233","wendell a lim","james c liao"
-"234","michael j selgelid","james kirbya"
-"235","alexander powell","jonathan f davies"
-"236","michael j selgelid","ian kerridge"
-"237","michael j selgelid","ian kerridge"
-"238","stefan eriksson","kathinka evers"
-"239","gaymon bennett","jef boeke"
-"240","rajendiran sutha","annamalai murugesan"
-"241","dieter metze","thomas a luger"
-"242","j stano","k micieta"
-"243","markus schmidt","lei pei"
-"244","anna labno","endy drew"
-"245","barbara a fechta","scott tonid"
-"246","c prowse","m castro sitiriche"
-"247","chris j paddonb","bernhard  palsson"
-"248","collin h martin","karl j fisher"
-"249","daniel j dwyer","vladimir n noskov"
-"250","david magnus","jay d keasling"
-"251","david nielsen","a spence"
-"252","diana m bowman","kristala jones prather"
-"253","eric m paradisea","paul rabinow"
-"254","jay d keasling","gina kwon a"
-"255","jennifer byers corbin","william h mather"
-"256","nediljko budisa","s panke"
-"257","paul martin","brigitte hantsche tangen"
-"258","peter holtz","alexander kelle"
-"259","petra neumann staubitz","eriko takano"
-"260","rachel a eachus","dae kyun robb"
-"261","raymond a zilinskas","daniel mcgee"
-"262","ron weiss","ewald strasser"
-"263","ron weiss","hugo g menzella"
-"264","taizo hanai","florentine eichler"
-"265","michael j selgelid","dae kyun robb"
-"266","alexander powell","jane calvert"
-"267","stefan eriksson","anna t ho glund"
-"268","gaymon bennett","drew endy"
-"269","rajendiran sutha","anandan dayanandan"
-"270","dieter metze","stephan grabbe"
-"271","j stano","and v blanarikova"
-"272","markus schmidt","wei wei"
-"273","anna labno","jacobson joseph"
-"274","barbara a fechta","laurie j heyer"
-"275","c prowse","g kadoda"
-"276","chris j paddonb","sang yup lee"
-"277","collin h martin","karyn l newman"
-"278","daniel j dwyer","ray yuan chuang"
-"279","david nielsen","j a van hilten"
-"280","jennifer byers corbin","lev s tsimring"
-"281","peter holtz","anna deplazes"
-"282","rachel a eachus","jay d keasling"
-"283","raymond a zilinskas","ethics of genomics group"
-"284","ron weiss","wolfgang wagner"
-"285","taizo hanai","allen lin"
-"286","michael j selgelid","jay d keasling"
-"287","gaymon bennett","paul rabinow"
-"288","dieter metze","matthias gunzer"
-"289","markus schmidt","and ke ping ma"
-"290","anna labno","keasling jay"
-"291","barbara a fechta","malcolm campbell"
-"292","collin h martin","john m ndungu"
-"293","daniel j dwyer","mikkel a algire"
-"294","david nielsen","k lowe"
-"295","jennifer byers corbin","jeff hasty"
-"296","peter holtz","nikola biller andorno"
-"297","taizo hanai","martin oesterreicher"
-"298","anna labno","modrich paul"
-"299","collin h martin","kimberly a ho"
-"300","daniel j dwyer","gwynedd a benders"
-"301","anna labno","smolke christina"
-"302","collin h martin","rachel a eachus"
-"303","daniel j dwyer","michael g montague"
-"304","anna labno","weiss ron"
-"305","collin h martin","timothy s ham"
-"306","daniel j dwyer","li ma"
-"307","collin h martin","james kirbya"
-"308","daniel j dwyer","monzia m moodie"
-"309","collin h martin","michelle c y chang"
-"310","daniel j dwyer","chuck merryman"
-"311","collin h martin","sydnor t withers"
-"312","daniel j dwyer","sanjay vashee"
-"313","collin h martin","yoichiro shiba"
-"314","daniel j dwyer","radha krishnakumar"
-"315","collin h martin","richmond sarpong"
-"316","daniel j dwyer","nacyra assad garcia"
-"317","collin h martin","jay d keasling"
-"318","collins jim","endy drew"
-"319","kyri bye nagel","scott tonid"
-"320","g middendorf","m castro sitiriche"
-"321","hyun uk kim","bernhard  palsson"
-"322","mario ouellet","karl j fisher"
-"323","carole lartigue","vladimir n noskov"
-"324","jack d newman","jay d keasling"
-"325","e townsend","a spence"
-"326","kevin solomon","kristala jones prather"
-"327","anthony stavrianakis","paul rabinow"
-"328","farnaz nowroozi","gina kwon a"
-"329","matthew r bennett","william h mather"
-"330","f greve","s panke"
-"331","uwe tangen","brigitte hantsche tangen"
-"332","helge torgersen","alexander kelle"
-"333","roel bovenberg","eriko takano"
-"334","william trieu","dae kyun robb"
-"335","arthur caplan","daniel mcgee"
-"336","wolfgang kerbe","ewald strasser"
-"337","hugo gramajo","hugo g menzella"
-"338","rocco casagrande","florentine eichler"
-"339","james kirbya","dae kyun robb"
-"340","jonathan f davies","jane calvert"
-"341","kathinka evers","anna t ho glund"
-"342","jef boeke","drew endy"
-"343","annamalai murugesan","anandan dayanandan"
-"344","thomas a luger","stephan grabbe"
-"345","k micieta","and v blanarikova"
-"346","lei pei","wei wei"
-"347","collins jim","jacobson joseph"
-"348","kyri bye nagel","laurie j heyer"
-"349","g middendorf","g kadoda"
-"350","hyun uk kim","sang yup lee"
-"351","mario ouellet","karyn l newman"
-"352","carole lartigue","ray yuan chuang"
-"353","e townsend","j a van hilten"
-"354","matthew r bennett","lev s tsimring"
-"355","helge torgersen","anna deplazes"
-"356","william trieu","jay d keasling"
-"357","arthur caplan","ethics of genomics group"
-"358","wolfgang kerbe","wolfgang wagner"
-"359","rocco casagrande","allen lin"
-"360","james kirbya","jay d keasling"
-"361","jef boeke","paul rabinow"
-"362","thomas a luger","matthias gunzer"
-"363","lei pei","and ke ping ma"
-"364","collins jim","keasling jay"
-"365","kyri bye nagel","malcolm campbell"
-"366","mario ouellet","john m ndungu"
-"367","carole lartigue","mikkel a algire"
-"368","e townsend","k lowe"
-"369","matthew r bennett","jeff hasty"
-"370","helge torgersen","nikola biller andorno"
-"371","rocco casagrande","martin oesterreicher"
-"372","collins jim","modrich paul"
-"373","mario ouellet","kimberly a ho"
-"374","carole lartigue","gwynedd a benders"
-"375","collins jim","smolke christina"
-"376","mario ouellet","rachel a eachus"
-"377","carole lartigue","michael g montague"
-"378","collins jim","weiss ron"
-"379","mario ouellet","timothy s ham"
-"380","carole lartigue","li ma"
-"381","mario ouellet","james kirbya"
-"382","carole lartigue","monzia m moodie"
-"383","mario ouellet","michelle c y chang"
-"384","carole lartigue","chuck merryman"
-"385","mario ouellet","sydnor t withers"
-"386","carole lartigue","sanjay vashee"
-"387","mario ouellet","yoichiro shiba"
-"388","carole lartigue","radha krishnakumar"
-"389","mario ouellet","richmond sarpong"
-"390","carole lartigue","nacyra assad garcia"
-"391","mario ouellet","jay d keasling"
-"392","endy drew","jacobson joseph"
-"393","scott tonid","laurie j heyer"
-"394","m castro sitiriche","g kadoda"
-"395","bernhard  palsson","sang yup lee"
-"396","karl j fisher","karyn l newman"
-"397","vladimir n noskov","ray yuan chuang"
-"398","a spence","j a van hilten"
-"399","william h mather","lev s tsimring"
-"400","alexander kelle","anna deplazes"
-"401","dae kyun robb","jay d keasling"
-"402","daniel mcgee","ethics of genomics group"
-"403","ewald strasser","wolfgang wagner"
-"404","florentine eichler","allen lin"
-"405","dae kyun robb","jay d keasling"
-"406","drew endy","paul rabinow"
-"407","stephan grabbe","matthias gunzer"
-"408","wei wei","and ke ping ma"
-"409","endy drew","keasling jay"
-"410","scott tonid","malcolm campbell"
-"411","karl j fisher","john m ndungu"
-"412","vladimir n noskov","mikkel a algire"
-"413","a spence","k lowe"
-"414","william h mather","jeff hasty"
-"415","alexander kelle","nikola biller andorno"
-"416","florentine eichler","martin oesterreicher"
-"417","endy drew","modrich paul"
-"418","karl j fisher","kimberly a ho"
-"419","vladimir n noskov","gwynedd a benders"
-"420","endy drew","smolke christina"
-"421","karl j fisher","rachel a eachus"
-"422","vladimir n noskov","michael g montague"
-"423","endy drew","weiss ron"
-"424","karl j fisher","timothy s ham"
-"425","vladimir n noskov","li ma"
-"426","karl j fisher","james kirbya"
-"427","vladimir n noskov","monzia m moodie"
-"428","karl j fisher","michelle c y chang"
-"429","vladimir n noskov","chuck merryman"
-"430","karl j fisher","sydnor t withers"
-"431","vladimir n noskov","sanjay vashee"
-"432","karl j fisher","yoichiro shiba"
-"433","vladimir n noskov","radha krishnakumar"
-"434","karl j fisher","richmond sarpong"
-"435","vladimir n noskov","nacyra assad garcia"
-"436","karl j fisher","jay d keasling"
-"437","jacobson joseph","keasling jay"
-"438","laurie j heyer","malcolm campbell"
-"439","karyn l newman","john m ndungu"
-"440","ray yuan chuang","mikkel a algire"
-"441","j a van hilten","k lowe"
-"442","lev s tsimring","jeff hasty"
-"443","anna deplazes","nikola biller andorno"
-"444","allen lin","martin oesterreicher"
-"445","jacobson joseph","modrich paul"
-"446","karyn l newman","kimberly a ho"
-"447","ray yuan chuang","gwynedd a benders"
-"448","jacobson joseph","smolke christina"
-"449","karyn l newman","rachel a eachus"
-"450","ray yuan chuang","michael g montague"
-"451","jacobson joseph","weiss ron"
-"452","karyn l newman","timothy s ham"
-"453","ray yuan chuang","li ma"
-"454","karyn l newman","james kirbya"
-"455","ray yuan chuang","monzia m moodie"
-"456","karyn l newman","michelle c y chang"
-"457","ray yuan chuang","chuck merryman"
-"458","karyn l newman","sydnor t withers"
-"459","ray yuan chuang","sanjay vashee"
-"460","karyn l newman","yoichiro shiba"
-"461","ray yuan chuang","radha krishnakumar"
-"462","karyn l newman","richmond sarpong"
-"463","ray yuan chuang","nacyra assad garcia"
-"464","karyn l newman","jay d keasling"
-"465","keasling jay","modrich paul"
-"466","john m ndungu","kimberly a ho"
-"467","mikkel a algire","gwynedd a benders"
-"468","keasling jay","smolke christina"
-"469","john m ndungu","rachel a eachus"
-"470","mikkel a algire","michael g montague"
-"471","keasling jay","weiss ron"
-"472","john m ndungu","timothy s ham"
-"473","mikkel a algire","li ma"
-"474","john m ndungu","james kirbya"
-"475","mikkel a algire","monzia m moodie"
-"476","john m ndungu","michelle c y chang"
-"477","mikkel a algire","chuck merryman"
-"478","john m ndungu","sydnor t withers"
-"479","mikkel a algire","sanjay vashee"
-"480","john m ndungu","yoichiro shiba"
-"481","mikkel a algire","radha krishnakumar"
-"482","john m ndungu","richmond sarpong"
-"483","mikkel a algire","nacyra assad garcia"
-"484","john m ndungu","jay d keasling"
-"485","modrich paul","smolke christina"
-"486","kimberly a ho","rachel a eachus"
-"487","gwynedd a benders","michael g montague"
-"488","modrich paul","weiss ron"
-"489","kimberly a ho","timothy s ham"
-"490","gwynedd a benders","li ma"
-"491","kimberly a ho","james kirbya"
-"492","gwynedd a benders","monzia m moodie"
-"493","kimberly a ho","michelle c y chang"
-"494","gwynedd a benders","chuck merryman"
-"495","kimberly a ho","sydnor t withers"
-"496","gwynedd a benders","sanjay vashee"
-"497","kimberly a ho","yoichiro shiba"
-"498","gwynedd a benders","radha krishnakumar"
-"499","kimberly a ho","richmond sarpong"
-"500","gwynedd a benders","nacyra assad garcia"
-"501","kimberly a ho","jay d keasling"
-"502","smolke christina","weiss ron"
-"503","rachel a eachus","timothy s ham"
-"504","michael g montague","li ma"
-"505","rachel a eachus","james kirbya"
-"506","michael g montague","monzia m moodie"
-"507","rachel a eachus","michelle c y chang"
-"508","michael g montague","chuck merryman"
-"509","rachel a eachus","sydnor t withers"
-"510","michael g montague","sanjay vashee"
-"511","rachel a eachus","yoichiro shiba"
-"512","michael g montague","radha krishnakumar"
-"513","rachel a eachus","richmond sarpong"
-"514","michael g montague","nacyra assad garcia"
-"515","rachel a eachus","jay d keasling"
-"516","timothy s ham","james kirbya"
-"517","li ma","monzia m moodie"
-"518","timothy s ham","michelle c y chang"
-"519","li ma","chuck merryman"
-"520","timothy s ham","sydnor t withers"
-"521","li ma","sanjay vashee"
-"522","timothy s ham","yoichiro shiba"
-"523","li ma","radha krishnakumar"
-"524","timothy s ham","richmond sarpong"
-"525","li ma","nacyra assad garcia"
-"526","timothy s ham","jay d keasling"
-"527","james kirbya","michelle c y chang"
-"528","monzia m moodie","chuck merryman"
-"529","james kirbya","sydnor t withers"
-"530","monzia m moodie","sanjay vashee"
-"531","james kirbya","yoichiro shiba"
-"532","monzia m moodie","radha krishnakumar"
-"533","james kirbya","richmond sarpong"
-"534","monzia m moodie","nacyra assad garcia"
-"535","james kirbya","jay d keasling"
-"536","michelle c y chang","sydnor t withers"
-"537","chuck merryman","sanjay vashee"
-"538","michelle c y chang","yoichiro shiba"
-"539","chuck merryman","radha krishnakumar"
-"540","michelle c y chang","richmond sarpong"
-"541","chuck merryman","nacyra assad garcia"
-"542","michelle c y chang","jay d keasling"
-"543","sydnor t withers","yoichiro shiba"
-"544","sanjay vashee","radha krishnakumar"
-"545","sydnor t withers","richmond sarpong"
-"546","sanjay vashee","nacyra assad garcia"
-"547","sydnor t withers","jay d keasling"
-"548","yoichiro shiba","richmond sarpong"
-"549","radha krishnakumar","nacyra assad garcia"
-"550","yoichiro shiba","jay d keasling"
-"551","richmond sarpong","jay d keasling"
+"","degree","in_degree","out_degree","btwn","close","vector"
+"jay d keasling",31,31,31,631.154761904762,2.12820294543288e-05,1
+"dae kyun robb",22,22,22,43.3,2.12720697723889e-05,0.967681524168509
+"michelle c y chang",19,19,19,50.5833333333333,2.12675457252233e-05,0.813224763575593
+"rachel a eachus",18,18,18,2.58333333333333,2.12670934263414e-05,0.810466437810082
+"yoichiro shiba",18,18,18,29.675,2.12716172810619e-05,0.811337976778287
+"james kirbya",18,18,18,29.675,2.12716172810619e-05,0.811337976778287
+"collin h martin",14,14,14,0,2.12666411466973e-05,0.635892290416396
+"mario ouellet",14,14,14,0,2.12666411466973e-05,0.635892290416396
+"karl j fisher",14,14,14,0,2.12666411466973e-05,0.635892290416396
+"karyn l newman",14,14,14,0,2.12666411466973e-05,0.635892290416396
+"john m ndungu",14,14,14,0,2.12666411466973e-05,0.635892290416396
+"kimberly a ho",14,14,14,0,2.12666411466973e-05,0.635892290416396
+"timothy s ham",14,14,14,0,2.12666411466973e-05,0.635892290416396
+"sydnor t withers",14,14,14,0,2.12666411466973e-05,0.635892290416396
+"richmond sarpong",14,14,14,0,2.12666411466973e-05,0.635892290416396
+"daniel g gibson",13,13,13,0,1.79662234998203e-05,0
+"daniel j dwyer",13,13,13,0,1.79662234998203e-05,0
+"carole lartigue",13,13,13,0,1.79662234998203e-05,0
+"vladimir n noskov",13,13,13,0,1.79662234998203e-05,0
+"ray yuan chuang",13,13,13,0,1.79662234998203e-05,0
+"mikkel a algire",13,13,13,0,1.79662234998203e-05,0
+"gwynedd a benders",13,13,13,0,1.79662234998203e-05,0
+"michael g montague",13,13,13,0,1.79662234998203e-05,0
+"li ma",13,13,13,0,1.79662234998203e-05,0
+"monzia m moodie",13,13,13,0,1.79662234998203e-05,0
+"chuck merryman",13,13,13,0,1.79662234998203e-05,0
+"sanjay vashee",13,13,13,0,1.79662234998203e-05,0
+"radha krishnakumar",13,13,13,0,1.79662234998203e-05,0
+"nacyra assad garcia",13,13,13,0,1.79662234998203e-05,0
+"michael j selgelid",12,12,12,374.545238095238,2.12725222829671e-05,0.238572333785833
+"drew endy",10,10,10,270,2.12598592597317e-05,0.00590780726007334
+"gaymon bennett",9,9,9,396.888095238095,2.12738799302217e-05,0.0701622346270539
+"markus schmidt",9,9,9,24,1.77345842126731e-05,0
+"paul rabinow",9,9,9,136.7,2.12634757277425e-05,0.0116652241245317
+"baker david",8,8,8,0,1.75839634253561e-05,0
+"anna labno",8,8,8,0,1.75839634253561e-05,0
+"ron weiss",8,8,8,19,1.75839634253561e-05,0
+"collins jim",8,8,8,0,1.75839634253561e-05,0
+"endy drew",8,8,8,0,1.75839634253561e-05,0
+"jacobson joseph",8,8,8,0,1.75839634253561e-05,6.27222166550007e-19
+"keasling jay",8,8,8,0,1.75839634253561e-05,0
+"modrich paul",8,8,8,0,1.75839634253561e-05,0
+"smolke christina",8,8,8,0,1.75839634253561e-05,0
+"weiss ron",8,8,8,0,1.75839634253561e-05,2.93226362862128e-17
+"anna deplazes",6,6,6,9,1.77336407164391e-05,0
+"gabrielle n samuel",6,6,6,12.8666666666667,2.12585034013605e-05,0.050033365520832
+"arthur caplan",5,5,5,5,1.74352715543545e-05,0
+"brianna pearson",5,5,5,0,1.73623168275575e-05,0
+"barbara a fechta",5,5,5,0,1.73623168275575e-05,0
+"e ferguson",5,5,5,0,1.73623168275575e-05,0
+"david nielsen",5,5,5,0,1.73623168275575e-05,0
+"eric m paradisea",5,5,5,114.028571428571,2.1264380037e-05,0.0232673128611125
+"jesse stricker",5,5,5,0,1.73623168275575e-05,0
+"jennifer byers corbin",5,5,5,0,1.73623168275575e-05,0
+"peter holtz",5,5,5,0,1.77333262400028e-05,0
+"mildred k cho",5,5,5,5,1.74352715543545e-05,0
+"shlomiya bar yam",5,5,5,0,1.73623168275575e-05,1.9551690972926e-18
+"taizo hanai",5,5,5,0,1.73623168275575e-05,0
+"ian kerridge",5,5,5,48,2.12521783482807e-05,0.0357675561780839
+"kyri bye nagel",5,5,5,0,1.73623168275575e-05,0
+"e townsend",5,5,5,0,1.73623168275575e-05,0
+"matthew r bennett",5,5,5,0,1.73623168275575e-05,0
+"helge torgersen",5,5,5,0,1.77333262400028e-05,2.40966015938254e-18
+"rocco casagrande",5,5,5,0,1.73623168275575e-05,0
+"scott tonid",5,5,5,0,1.73623168275575e-05,0
+"a spence",5,5,5,0,1.73623168275575e-05,0
+"william h mather",5,5,5,0,1.73623168275575e-05,0
+"alexander kelle",5,5,5,0,1.77333262400028e-05,0
+"florentine eichler",5,5,5,0,1.73623168275575e-05,0
+"laurie j heyer",5,5,5,0,1.73623168275575e-05,0
+"j a van hilten",5,5,5,0,1.73623168275575e-05,0
+"lev s tsimring",5,5,5,0,1.73623168275575e-05,0
+"allen lin",5,5,5,0,1.73623168275575e-05,0
+"malcolm campbell",5,5,5,0,1.73623168275575e-05,0
+"k lowe",5,5,5,0,1.73623168275575e-05,0
+"jeff hasty",5,5,5,0,1.73623168275575e-05,0
+"nikola biller andorno",5,5,5,0,1.77333262400028e-05,0
+"martin oesterreicher",5,5,5,0,1.73623168275575e-05,0
+"c verharen",4,4,4,0,1.72896711504547e-05,0
+"c prowse",4,4,4,0,1.72896711504547e-05,0
+"christian l barrett",4,4,4,0,1.72896711504547e-05,0
+"chris j paddonb",4,4,4,0,1.72896711504547e-05,0
+"jane calvert",4,4,4,3,1.72896711504547e-05,0
+"kristala jones prather",4,4,4,138,2.12354802403856e-05,0.000924685377203863
+"raymond a zilinskas",4,4,4,0,1.74349675709603e-05,0
+"nicole kronberger",4,4,4,0,1.75827267292612e-05,0
+"filippa lentzos",4,4,4,0,2.12571477159195e-05,0.00577221708356515
+"meinhard schiller",4,4,4,0,1.72896711504547e-05,0
+"dieter metze",4,4,4,0,1.72896711504547e-05,0
+"zheng jun guan",4,4,4,0,1.77326973205894e-05,0
+"g middendorf",4,4,4,0,1.72896711504547e-05,0
+"hyun uk kim",4,4,4,0,1.72896711504547e-05,0
+"william trieu",4,4,4,0,2.12621194080626e-05,0.221695444190098
+"wolfgang kerbe",4,4,4,0,1.75827267292612e-05,0
+"jef boeke",4,4,4,0,2.12571477159195e-05,0.00577221708356514
+"thomas a luger",4,4,4,0,1.72896711504547e-05,0
+"lei pei",4,4,4,0,1.77326973205894e-05,0
+"m castro sitiriche",4,4,4,0,1.72896711504547e-05,0
+"bernhard  palsson",4,4,4,0,1.72896711504547e-05,0
+"daniel mcgee",4,4,4,0,1.74349675709603e-05,0
+"ewald strasser",4,4,4,0,1.75827267292612e-05,0
+"stephan grabbe",4,4,4,0,1.72896711504547e-05,0
+"wei wei",4,4,4,0,1.77326973205894e-05,0
+"g kadoda",4,4,4,0,1.72896711504547e-05,0
+"sang yup lee",4,4,4,0,1.72896711504547e-05,0
+"ethics of genomics group",4,4,4,0,1.74349675709603e-05,0
+"wolfgang wagner",4,4,4,0,1.75827267292612e-05,0
+"matthias gunzer",4,4,4,0,1.72896711504547e-05,0
+"and ke ping ma",4,4,4,0,1.77326973205894e-05,0
+"douglas j piteraa",3,3,3,0,2.1261215291066e-05,0.0704246262072206
+"david magnus",3,3,3,0,2.1261215291066e-05,0.0704246262072206
+"effendi leonard",3,3,3,0,2.12147569849587e-05,6.51206220488518e-05
+"diana m bowman",3,3,3,0,2.12147569849587e-05,6.51206220488462e-05
+"james j collins",3,3,3,2,1.72176308539945e-05,0
+"jennifer r anthony",3,3,3,0,2.1261215291066e-05,0.0704246262072207
+"m bujara",3,3,3,0,1.72176308539945e-05,0
+"nediljko budisa",3,3,3,0,1.72176308539945e-05,0
+"mark a bedau",3,3,3,0,1.72176308539945e-05,0
+"paul martin",3,3,3,0,1.72176308539945e-05,0
+"marnix h medema",3,3,3,0,1.72176308539945e-05,0
+"petra neumann staubitz",3,3,3,0,1.72176308539945e-05,0
+"pablo ravasi",3,3,3,0,1.75824175824176e-05,0
+"maureen a o malley",3,3,3,0,1.72893722228946e-05,0
+"alexander powell",3,3,3,0,1.72893722228946e-05,0
+"frida kuhlau",3,3,3,0,1.72176308539945e-05,0
+"stefan eriksson",3,3,3,0,1.72176308539945e-05,0
+"ponnusamy kumar",3,3,3,0,1.72176308539945e-05,0
+"rajendiran sutha",3,3,3,0,1.72176308539945e-05,0
+"m korenova",3,3,3,0,1.72176308539945e-05,0
+"j stano",3,3,3,0,1.72176308539945e-05,0
+"jack d newman",3,3,3,0,2.1261215291066e-05,0.0704246262072206
+"kevin solomon",3,3,3,0,2.12147569849587e-05,6.51206220488385e-05
+"anthony stavrianakis",3,3,3,0,2.12585034013605e-05,0.00648750042259641
+"farnaz nowroozi",3,3,3,0,2.1261215291066e-05,0.0704246262072207
+"f greve",3,3,3,0,1.72176308539945e-05,0
+"uwe tangen",3,3,3,0,1.72176308539945e-05,0
+"roel bovenberg",3,3,3,0,1.72176308539945e-05,0
+"hugo gramajo",3,3,3,0,1.75824175824176e-05,0
+"jonathan f davies",3,3,3,0,1.72893722228946e-05,0
+"kathinka evers",3,3,3,0,1.72176308539945e-05,0
+"annamalai murugesan",3,3,3,0,1.72176308539945e-05,0
+"k micieta",3,3,3,0,1.72176308539945e-05,0
+"gina kwon a",3,3,3,0,2.1261215291066e-05,0.0704246262072206
+"s panke",3,3,3,0,1.72176308539945e-05,0
+"brigitte hantsche tangen",3,3,3,0,1.72176308539945e-05,0
+"eriko takano",3,3,3,0,1.72176308539945e-05,0
+"hugo g menzella",3,3,3,0,1.75824175824176e-05,0
+"anna t ho glund",3,3,3,0,1.72176308539945e-05,0
+"anandan dayanandan",3,3,3,0,1.72176308539945e-05,0
+"and v blanarikova",3,3,3,0,1.72176308539945e-05,0
+"adam arkin",2,2,2,0,1.71461884023182e-05,0
+"pamela a silver",2,2,2,0,1.71461884023182e-05,0
+"barry canton",2,2,2,0,2.1238637329029e-05,0.000388682311494601
+"antoine danchin",2,2,2,0,2.1238637329029e-05,0.000388682311494606
+"eric g gladstone",2,2,2,0,2.1238637329029e-05,0.000388682311494598
+"farren j isaacs",2,2,2,0,1.72173344122863e-05,0
+"emily c parke",2,2,2,0,1.72173344122863e-05,0
+"graeme a hodge",2,2,2,0,1.71461884023182e-05,0
+"erin d williams",2,2,2,0,1.71461884023182e-05,0
+"james m carothers",2,2,2,0,2.12670934263414e-05,0.0660611164842275
+"joy sinha",2,2,2,0,1.71461884023182e-05,0
+"larry c anthony",2,2,2,0,1.71461884023182e-05,0
+"lorna weir",2,2,2,180,2.12544368636953e-05,0.0147841513824942
+"leon y chan",2,2,2,0,2.1238637329029e-05,0.000388682311494598
+"markus huppenbauer",2,2,2,0,2.1238637329029e-05,0.000388682311494601
+"martin fussenegger",2,2,2,1,1.71461884023182e-05,0
+"paul oldham",2,2,2,0,1.71461884023182e-05,0
+"salvador peiru",2,2,2,0,1.71461884023182e-05,0
+"ryan mcdaniel",2,2,2,1,1.71461884023182e-05,0
+"shota atsumi",2,2,2,0,1.71461884023182e-05,0
+"wendell a lim",2,2,2,0,1.71461884023182e-05,0
+"george chruch",2,2,2,0,1.71461884023182e-05,0
+"james j bull",2,2,2,0,2.1238637329029e-05,0.000388682311494599
+"andrew d maynard",2,2,2,0,1.71461884023182e-05,0
+"justin p gallivan",2,2,2,0,1.71461884023182e-05,0
+"geoff burton",2,2,2,0,1.71461884023182e-05,0
+"james c liao",2,2,2,0,1.71461884023182e-05,0
+"ahmad s khalil",1,1,1,0,1.70753363841268e-05,0
+"agomoni ganguli mitra",1,1,1,0,1.70753363841268e-05,0
+"ali nouri",1,1,1,0,1.70753363841268e-05,0
+"alan irwin",1,1,1,0,1.70753363841268e-05,0
+"amelie cserer",1,1,1,0,1.70753363841268e-05,0
+"alexander van oudenaarden",1,1,1,0,1.70753363841268e-05,0
+"alexandra seiringer",1,1,1,0,1.77308108299793e-05,0
+"brian j yeh",1,1,1,0,1.74337517433752e-05,0
+"christina d smolke",1,1,1,0,1.70753363841268e-05,0
+"christopher f chyba",1,1,1,0,1.70753363841268e-05,0
+"dominique aubel",1,1,1,0,1.70753363841268e-05,0
+"david berry",1,1,1,0,1.70753363841268e-05,0
+"heinz neumann",1,1,1,0,1.70753363841268e-05,0
+"gautam mukunda",1,1,1,0,1.70753363841268e-05,0
+"howard chou",1,1,1,0,1.72887743987829e-05,0
+"ian j molineux",1,1,1,0,2.12603112509567e-05,0.0617300016265753
+"jeff gore",1,1,1,0,1.72170379807858e-05,0
+"joachim henkel",1,1,1,0,1.70753363841268e-05,0
+"john i glass",1,1,1,0,1.70753363841268e-05,0
+"jonathan b tucker",1,1,1,0,1.70753363841268e-05,0
+"jonathan a goler",1,1,1,0,1.70753363841268e-05,0
+"linda j kahl",1,1,1,0,1.71458944155822e-05,0
+"lisa klasson",1,1,1,0,1.71458944155822e-05,0
+"luis moroder",1,1,1,0,1.70753363841268e-05,0
+"morgan meyer",1,1,1,0,1.70753363841268e-05,0
+"maja horst",1,1,1,0,1.70753363841268e-05,0
+"nikolas rose",1,1,1,0,1.70753363841268e-05,0
+"marcel tigges",1,1,1,0,1.70753363841268e-05,0
+"nils gilman",1,1,1,0,1.70753363841268e-05,0
+"pier luigi luisi",1,1,1,0,2.12508234694094e-05,0.0147270705526553
+"rainer breitling",1,1,1,0,2.12458570578737e-05,0.0502003659782927
+"nigel m de s cameron",1,1,1,0,1.75817993213425e-05,0
+"pasquale stano",1,1,1,0,1.70753363841268e-05,0
+"s billerbeck",1,1,1,0,1.70753363841268e-05,0
+"sam snell",1,1,1,0,2.12417953565435e-05,0.000720094304181711
+"samuel j reyes",1,1,1,0,2.12417953565435e-05,0.000720094304181707
+"petra schwille",1,1,1,0,1.70753363841268e-05,0
+"scott cookson",1,1,1,0,1.70753363841268e-05,0
+"priscilla e m purnick",1,1,1,0,1.70753363841268e-05,0
+"siv g e andersson",1,1,1,0,1.70753363841268e-05,0
+"rachel wellhausen",1,1,1,0,1.70753363841268e-05,0
+"sriram kosuri",1,1,1,0,1.70753363841268e-05,0
+"ruth mampuys",1,1,1,0,1.70753363841268e-05,0
+"stefan diez",1,1,1,0,1.70753363841268e-05,0
+"stephen hall",1,1,1,0,1.71458944155822e-05,0
+"stephen m maurer",1,1,1,0,1.71458944155822e-05,0
+"seumas miller",1,1,1,0,1.70753363841268e-05,0
+"tae yong kim",1,1,1,0,1.70753363841268e-05,0
+"stephen d unwina",1,1,1,0,1.70753363841268e-05,0
+"church george",1,1,1,0,1.70753363841268e-05,0
+"susan molyneux hodgson",1,1,1,0,1.70753363841268e-05,0
+"frans w a brom",1,1,1,0,1.70753363841268e-05,0
+"svitlana v pustovit",1,1,1,0,2.12305209969853e-05,0.00220793130105174
+"vi ctor de lorenzo",1,1,1,0,1.70753363841268e-05,0
+"j tharakan",1,1,1,0,1.70753363841268e-05,0
+"lalit kant",1,1,1,0,1.70753363841268e-05,0
+"d t mourya",1,1,1,0,1.70753363841268e-05,0
+"sibylle gaisser",1,1,1,0,1.70753363841268e-05,0
+"thomas reiss",1,1,1,0,1.70753363841268e-05,0
+"thomas douglas",1,1,1,0,1.70753363841268e-05,0
+"julian savulescu",1,1,1,0,1.70753363841268e-05,0
+"david a relman",1,1,1,0,1.74337517433752e-05,0
+"robin fears",1,1,1,0,1.70753363841268e-05,0
+"volker ter meulen",1,1,1,0,1.70753363841268e-05,0
+"arti rai",1,1,1,0,1.70753363841268e-05,0
+"james boyle",1,1,1,0,1.70753363841268e-05,0

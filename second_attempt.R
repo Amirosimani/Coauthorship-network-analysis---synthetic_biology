@@ -79,9 +79,11 @@ eigen <- evcent(graph)
 )
 degrees <- data.frame(degree,in_degree,out_degree,btwn,close,eigen)
 #cleaning up the table
-degrees = degrees[,c(1:6, 28)]
+degrees = degrees[,c(1:6)]
   #include this in markdown
-degrees_sorted <- degrees[order(-degrees$in_degree),] 
+degrees_sorted <- degrees[order(-degrees$degree),] 
+write.csv(degrees_sorted, file = "degrees_sorted.csv")
+
 
 library(gridExtra)
 pdf("data_output.pdf", height=15, width=15)
