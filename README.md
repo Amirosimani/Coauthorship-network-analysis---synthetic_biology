@@ -19,7 +19,7 @@ Cd(v) = deg(v)
 
  It is measured by number of edges of a node. It can be also normalized by dividing by total number of edges.
 
-**Betweenness Centrality ** : Betweenness centrality of node v is equal to the number of shortest paths from all vertices to all other that pass v.
+**Betweenness Centrality** : Betweenness centrality of node v is equal to the number of shortest paths from all vertices to all other that pass v.
 
 It is a measure of the extent to which a node is connected to other nodes that are not connected to each other. In the other words the total amount of flow it carries if flow between all other nodes passes it.
 
