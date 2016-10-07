@@ -86,8 +86,8 @@ write.csv(degrees_sorted, file = "degrees_sorted.csv")
 
 
 library(gridExtra)
-pdf("data_output.pdf", height=15, width=15)
-grid.table(degrees)
+pdf("degrees_sorted.pdf", height=15, width=15)
+grid.table(degrees_sorted)
 dev.off()
 
 
