@@ -1,5 +1,7 @@
 #Co-authorship Network Analysis  in R
 
+(more details on https://amirhosblog.wordpress.com/2016/09/29/co-authorship-analysis-in-r/)
+
 Nowadays in every field, people collobrate with each other. There are alot of intersing collobation network analysis projects out there like rappers, co-stardom analysis, and scientific collaboration.
 
 The colloration network is formed as indvidulas with different skills/knowledge/professions interact with each other to facilitate fulfillment of tasks to a mutally shared goal. Collboration provides opportunity to all the parties involved to discover new knowledge/experinece/skills and consequenty combine them to address a complex challenge.
